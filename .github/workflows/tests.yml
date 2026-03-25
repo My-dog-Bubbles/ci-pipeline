@@ -8,3 +8,6 @@ jobs:
         run: pip install pytest pytest-cov flake-8
       - name: runtest to find coverage
         run: pytest --cov
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with: "python-version: 3.11"
